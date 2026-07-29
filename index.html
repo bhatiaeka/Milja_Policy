@@ -5,10 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy — Milja</title>
 <style>
+  :root {
+    color-scheme: light dark;
+  }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     line-height: 1.6;
     color: #1a1a1a;
+    background: #fff;
     max-width: 680px;
     margin: 0 auto;
     padding: 48px 24px 96px;
@@ -34,12 +38,27 @@
   ul {
     padding-left: 1.4em;
   }
+  @media (prefers-color-scheme: dark) {
+    body {
+      color: #e5e5e5;
+      background: #1a1a1a;
+    }
+    .updated {
+      color: #999;
+    }
+    h2 {
+      border-top-color: #333;
+    }
+    a {
+      color: #4da3ff;
+    }
+  }
 </style>
 </head>
 <body>
 
 <h1>Privacy Policy for Milja</h1>
-<p class="updated">Last updated: July 10, 2026</p>
+<p class="updated">Last updated: July 27, 2026</p>
 
 <p>Milja ("the app," "we," "us") is a music discovery app that lets you swipe
 through songs to build a personalized taste profile. This policy explains
@@ -58,6 +77,9 @@ This identity is a random string with no link to your real-world identity.</p>
     passed on, used to personalize your recommendations.</li>
   <li><strong>Feedback you choose to submit</strong> — optional free-text
     responses if you use the in-app feedback form.</li>
+  <li><strong>App activity</strong> — timestamps of when you open the app (and
+    whether songs you like are successfully saved to your Apple Music playlist),
+    used to measure retention and improve the experience.</li>
 </ul>
 
 <p><strong>Apple Music access.</strong> If you connect your Apple Music
@@ -84,8 +106,8 @@ of that data is governed by
 
 <h2>Where data is stored</h2>
 
-<p>Swipe history and feedback are stored on our backend infrastructure,
-provided by Supabase. Supabase's handling of data on our behalf is governed
+<p>Swipe history, app activity, and feedback are stored on our backend
+infrastructure, provided by Supabase. Supabase's handling of data on our behalf is governed
 by <a href="https://supabase.com/privacy">Supabase's Privacy Policy</a>.</p>
 
 <h2>Data retention and deletion</h2>
